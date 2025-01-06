@@ -1,17 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Features from "./components/features";
-import Testimonials from "./components/testimonials";
-import Footer from "./components/footer";
+import Features from "./components/body.tsx";
+import Footer from "./components/Footer.tsx";
 
 const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
       <Features />
-      <Testimonials />
       <Footer />
     </div>
   );

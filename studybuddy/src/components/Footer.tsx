@@ -1,30 +1,58 @@
-// src/components/Footer.tsx
-import React from "react";
+import '../styles/Footer.css'
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-    <footer className="py-6 bg-gray-800 text-white">
-      <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div>
-          <h3 className="font-bold">About Study Buddy</h3>
-          <p>Connecting students with expert tutors to achieve academic success.</p>
-        </div>
-        <div>
-          <h3 className="font-bold">Quick Links</h3>
-          <ul>
-            <li><a href="#" className="text-blue-400">Home</a></li>
-            <li><a href="#" className="text-blue-400">Courses</a></li>
-            <li><a href="#" className="text-blue-400">Tutors</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-bold">Contact Us</h3>
-          <p>Email: support@studybuddy.com</p>
-          <p>Phone: +1 410 450</p>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
+          {/* About Section */}
+          <div className="footer-section">
+            <h2 className="footer-heading">About Study Buddy</h2>
+            <p className="footer-text">
+              Study Buddy connects students with expert tutors to achieve academic success and reach their learning goals.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="footer-section">
+            <h2 className="footer-heading">Quick Links</h2>
+            <nav className="footer-nav">
+              <a href="/" className="footer-link">
+                Home
+              </a>
+              <a href="/courses" className="footer-link">
+                Courses
+              </a>
+              <a href="/tutors" className="footer-link">
+                Tutors
+              </a>
+              <a href="/faq" className="footer-link">
+                FAQ
+              </a>
+            </nav>
+          </div>
+
+          {/* Contact Section */}
+          <div className="footer-section">
+            <h2 className="footer-heading">Contact Us</h2>
+            <div className="footer-contact">
+              <p className="footer-contact-item">
+                <span className="footer-icon">✉</span>
+                support@studybuddy.com
+              </p>
+              <p className="footer-contact-item">
+                <span className="footer-icon">📞</span>
+                +961 81 419 450
+              </p>
+              <p className="footer-contact-item">
+                <span className="footer-icon">📍</span>
+                Tripoli
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
