@@ -1,0 +1,29 @@
+.footer {
+    padding: 2rem;
+    background-color: #2d3748; /* Dark gray */
+    color: white;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section-links a {
+    display: block;
+    color: #63b3ed; /* Blue */
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section-links a:hover {
+    text-decoration: underline;
+  }
+  

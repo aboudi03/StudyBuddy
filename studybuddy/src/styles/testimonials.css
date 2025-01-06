@@ -1,0 +1,34 @@
+.testimonials-section {
+    padding: 3rem 1rem;
+    background-color: #f7fafc;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .testimonial-item {
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
